@@ -1,0 +1,393 @@
+/*共通*/
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+  display: inline-flex;
+}
+
+main {
+  display: block;
+}
+
+section {
+  display: block;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+span {
+  display: block;
+}
+
+h2 {
+  font-weight: bold;
+  
+}
+
+.firstview {
+  background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 25px 0;
+}
+
+.background-sp {
+  display: none;
+}
+
+/*ヘッダー*/
+header {
+  width: 100%;
+  position: absolute;
+  padding: 20px 0px;
+}
+
+.header-logo-sp {
+  display: none;
+  height: 16px;
+}
+
+.header-humbuger {
+  display: none;
+}
+.header-logo-pc {
+  height: 20px;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.header-list {
+  margin-right:45px;
+}
+
+.header-list span {
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.header-list span:last-child {
+  font-size: 10px;
+}
+
+.list {
+  background-color: #F79214;
+  border-radius: 38px; 
+  height: 40px; 
+  align-items: center;
+  display: flex; 
+  justify-content: center;
+}
+
+.link {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+/*メイン*/
+.firstview-container {
+  padding: 0 50px;
+  margin: auto;
+  max-width: 1140px;
+  
+}
+
+.firstview-content {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.firstview-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-family: 'Lato', sans-serif;
+}
+
+.firstview-img {
+  margin-bottom: 25px;
+}
+
+.firstview-img img {
+  margin-right: 8px;
+}
+
+.firstview-img img:nth-of-type(2) {
+  width: 200px;
+}
+
+.firstview-img img:last-of-type {
+  margin-right: 0;
+}
+
+.firstview-link {
+  display: flex;
+}
+
+.firstview-link a {
+  background-color: #F79214;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+}
+
+.firstview-link a:first-child {
+  margin-right: 20px;
+  width: 300px;
+}
+
+.firstview-link a:last-child {
+  width: 180px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  color: #000;
+}
+
+.caution {
+  color: #A2A2A4;
+  font-size: 12px;
+}
+
+.caution-link {
+  color: #A2A2A4;
+}
+
+.about {
+  background-color: #F79214;
+  padding: 45px 0px;
+}
+
+.about-container {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 53%;
+  font-size: 0;
+}
+
+.about-main {
+  font-size: 40px;
+  white-space: nowrap;
+}
+
+.about-main span {
+  font-size: 50px;
+  display: inline;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-title br {
+  display: none;
+}
+
+.about-explain {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 26px;
+}
+
+.about-link {
+  align-items: center;
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 64px;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  width: 250px;
+}
+
+.about-link span {
+  color: #F79214;
+  font-size: 24px;
+}
+
+.about-link span:last-child {
+  font-size: 12px;
+}
+
+/*hover*/
+@media screen and (min-width: 768px) {
+  .header-logo-pc:hover  {
+    opacity: 0.8;
+  }
+  .list:hover {
+    opacity: 0.8;
+  }
+  .firstview-link a:hover {
+    opacity: 0.8;
+  }
+  .about-link:hover {
+    opacity: 0.8;
+  }
+}
+
+/*レスポンシブ対応*/
+@media screen and (max-width: 1080px) {
+  ul {
+    display:none;
+  }
+  header {
+    background-color: #fff;
+    position: unset;
+  }
+  .header-humburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    }
+  .header-humburger-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+}
+  .header-humburger-line:first-child {
+    top: 100%;
+  }
+  .header-humburger-line:last-child {
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo-sp {
+    display: block;
+    height: 16px;
+  }
+  .header-logo-pc {
+    display: none;
+  }
+  header {
+    padding: 15px 0;
+  }
+  .header-container {
+    margin: 0 20px;
+  }
+  .firstview {
+    background-image: none;
+    padding: 0 0 35px 0;
+  }
+  .background-sp {
+    display: block;
+    width: 100%;
+  }
+  .firstview-container {
+    margin: -45vw 0 0 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstview-content {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .firstview-title {
+    font-size: 25px;
+    margin: 0 -20px 15px -20px;
+  }
+  .firstview-img {
+    display: flex;
+    justify-content:  space-between;
+  }
+  .firstview-img img {
+    width: 27.5%;
+  }
+  .firstview-img img:nth-of-type(2) {
+    width: 40%;
+  }
+  .firstview-link a:first-child {
+    width: 100%;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .firstview-link a:last-child {
+    display: none;
+  }
+  .about {
+    padding: 30px 0;
+  }
+  .about-container {
+    padding: 0 20px;
+  }  
+  .about-main {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-main span {
+    font-size: 33px;
+  }
+  .about-main br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-title {
+    width: 100%;
+  }
+ 
+  .about-link {
+    margin-top: 40px;
+  }
+
+}
